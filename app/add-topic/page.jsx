@@ -18,7 +18,7 @@ export default function AddTopic() {
     try {
       const response = await fetch("http://localhost:3000/api/topics", {
         method: "POST",
-        header: {
+        headers: {
           "Content-type": "application/json",
         },
         body: JSON.stringify({ title, description }),
