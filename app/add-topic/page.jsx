@@ -27,6 +27,7 @@ export default function AddTopic() {
       if (response.ok) {
         router.push("/");
         alert(`Topic ${title} added successfully.`);
+        router.refresh();
       } else {
         throw new Error("Failed to create a topic");
       }
